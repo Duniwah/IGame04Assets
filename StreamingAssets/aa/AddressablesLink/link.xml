@@ -3,6 +3,7 @@
     <type fullname="BagController" preserve="all" />
     <type fullname="BgMgr" preserve="all" />
     <type fullname="EffectMgr" preserve="all" />
+    <type fullname="Game.EffectExhibit" preserve="all" />
     <type fullname="Game.Goods" preserve="all" />
     <type fullname="GameMgr" preserve="all" />
     <type fullname="GameView" preserve="all" />
@@ -11,6 +12,7 @@
     <type fullname="PassView" preserve="all" />
     <type fullname="PauseView" preserve="all" />
     <type fullname="ReadyView" preserve="all" />
+    <type fullname="ShakeCamera" preserve="all" />
     <type fullname="ShopView" preserve="all" />
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
