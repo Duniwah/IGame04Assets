@@ -5,13 +5,22 @@
     <type fullname="EffectMgr" preserve="all" />
     <type fullname="Game.EffectExhibit" preserve="all" />
     <type fullname="Game.Goods" preserve="all" />
+    <type fullname="Game.MenuView" preserve="all" />
+    <type fullname="Game.SceneLoader" preserve="all" />
+    <type fullname="Game.Transition" preserve="all" />
     <type fullname="GameMgr" preserve="all" />
     <type fullname="GameView" preserve="all" />
+    <type fullname="HelpView" preserve="all" />
     <type fullname="Mgr.GoodsMgr" preserve="all" />
     <type fullname="Mgr.PropMgr" preserve="all" />
     <type fullname="PassView" preserve="all" />
     <type fullname="PauseView" preserve="all" />
+    <type fullname="RankView" preserve="all" />
     <type fullname="ReadyView" preserve="all" />
+    <type fullname="RecordView" preserve="all" />
+    <type fullname="Reporter" preserve="all" />
+    <type fullname="ReporterMessageReceiver" preserve="all" />
+    <type fullname="Root" preserve="all" />
     <type fullname="ShakeCamera" preserve="all" />
     <type fullname="ShopView" preserve="all" />
   </assembly>
@@ -48,6 +57,9 @@
     <type fullname="UnityEngine.Texture2D" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
   </assembly>
+  <assembly fullname="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.GUISkin" preserve="all" />
+  </assembly>
   <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.ParticleSystem" preserve="all" />
     <type fullname="UnityEngine.ParticleSystemRenderer" preserve="all" />
@@ -64,11 +76,17 @@
     <type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="all" />
     <type fullname="UnityEngine.UI.Button" preserve="all" />
     <type fullname="UnityEngine.UI.CanvasScaler" preserve="all" />
+    <type fullname="UnityEngine.UI.ContentSizeFitter" preserve="all" />
     <type fullname="UnityEngine.UI.GraphicRaycaster" preserve="all" />
     <type fullname="UnityEngine.UI.GridLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.UI.Image" preserve="all" />
+    <type fullname="UnityEngine.UI.Mask" preserve="all" />
+    <type fullname="UnityEngine.UI.ScrollRect" preserve="all" />
     <type fullname="UnityEngine.UI.Text" preserve="all" />
+    <type fullname="UnityEngine.UI.Toggle" preserve="all" />
+    <type fullname="UnityEngine.UI.ToggleGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Canvas" preserve="all" />
