@@ -409,13 +409,16 @@ export default {
         this.gain.disconnect();
         this.panner.disconnect();
       },
-      playUrl(startTime, url, startOffset, duration) {
+      playUrl(startTime, url, startOffset, duration, volume) {
         try {
           if (this.source && url === this.source.url) {
             this.source.start(startTime, startOffset)
             return
           }
           this.setup(url);
+          if (typeof volume !== 'undefined') {
+            this.source.mediaElement.volume = volume;
+          }
           const chan = this;
           this.source.mediaElement.onPlay(() => {
             if (typeof this.source !== 'undefined') {
@@ -505,6 +508,7 @@ export default {
           if (this.source.mediaElement) {
             // this.source.mediaElement.pause();
             this.source.mediaElement.destroy();
+            delete audios[this.source.instanceId]
             delete this.source.mediaElement;
             delete this.source;
           }
@@ -1030,6 +1034,7 @@ export default {
           sound.url,
           offset,
           sound.duration,
+          soundVolumeHandler[channelInstance],
         );
       } catch (e) {
         err(`playUrl error. Exception: ${e}`);

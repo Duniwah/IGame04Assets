@@ -37,12 +37,12 @@ if (false) {
 }
 
 let managerConfig = {
-  DATA_FILE_MD5: "6e53f8a0759ce648",
-  CODE_FILE_MD5: "f77ad5188b8b4ac7",
+  DATA_FILE_MD5: "473cf52f37354ce0",
+  CODE_FILE_MD5: "047720e26b78b6c2",
   GAME_NAME: "webgl",
   APPID: "wxa75e2992dde8fc48",
   // DATA_FILE_SIZE: "$DATA_FILE_SIZE",
-  DATA_CDN: "https://cdn.jsdelivr.net/gh/Duniwah/IGame04Assets",
+  DATA_CDN: "https://cdn.jsdelivr.net/gh/Duniwah/IGame04Assets/webgl/",
   // 资源包是否作为小游戏分包加载
   loadDataPackageFromSubpackage: false,
 
