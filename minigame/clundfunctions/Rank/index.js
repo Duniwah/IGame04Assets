@@ -21,6 +21,10 @@ exports.main = async (event, context) => {
 }
 
 const uploadScore = async (_openid, userInfo) => {
+  let userInfo;
+  await wx.getUserProfile({
+    desc: 'desc',
+  })
   let info = {
     wxgame: {
       score: userInfo.wxgame.score,
