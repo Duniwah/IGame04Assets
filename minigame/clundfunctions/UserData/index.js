@@ -37,9 +37,9 @@ const reportData = async (openId, data) => {
     })
 }
 
-const getData = async (openId, data) => {
+const getData = async (openId, keyList) => {
   await wx.getUserCloudStorage({
-    keyList: data.keyList,
+    keyList: keyList,
   }).then(
     (res) => {
       return {
