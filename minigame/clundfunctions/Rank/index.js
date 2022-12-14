@@ -21,7 +21,6 @@ exports.main = async (event, context) => {
 }
 
 const uploadScore = async (_openid, userInfo) => {
-  let userInfo;
   let info = {
     wxgame: {
       score: userInfo.wxgame.score,
@@ -30,7 +29,7 @@ const uploadScore = async (_openid, userInfo) => {
     coin: userInfo.coin,
     nick_name: userInfo.nick_name,
     avatar_url: userInfo.avatar_url,
-    _serverDate = db.serverDate()
+    _serverDate : db.serverDate()
   }
   let msg;
   await collection.doc(_openid).set({
@@ -40,7 +39,7 @@ const uploadScore = async (_openid, userInfo) => {
   })
   return {
     data: info,
-    msg = msg,
+    msg : msg,
   }
 }
 
