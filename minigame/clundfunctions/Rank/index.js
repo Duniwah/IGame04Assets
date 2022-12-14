@@ -22,17 +22,14 @@ exports.main = async (event, context) => {
 
 const uploadScore = async (_openid, userInfo) => {
   let userInfo;
-  await wx.getUserProfile({
-    desc: 'desc',
-  })
   let info = {
     wxgame: {
       score: userInfo.wxgame.score,
       update_time: userInfo.wxgame.update_time,
     },
     coin: userInfo.coin,
-    // name:
-    // url
+    nick_name: userInfo.nick_name,
+    avatar_url: userInfo.avatar_url,
     _serverDate = db.serverDate()
   }
   let msg;
@@ -48,15 +45,6 @@ const uploadScore = async (_openid, userInfo) => {
 }
 
 const getScoreRankInfo = async (_openid, data) => {
-  // //orderBy 排序
-  // const all_data = await collection.orderBy('wxgame.score', 'desc')
-  //   //偏移量
-  //   .skip(data.offset)
-  //   //数量
-  //   .limit(data.count)
-  //   .get();
-  // const all_data_data = all_data.data;
-  // return all_data_data;
   let count = data.count;
   let offset = data.offset;
   let batchTimes = Math.ceil(count / MAX_LIMIT);
