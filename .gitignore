@@ -1,0 +1,6 @@
+.vscode/
+node_modules/
+**/package.json
+/minigame/clundfunctions/UserData/package.json
+minigame/clundfunctions/UserData/package.json
+**/json
