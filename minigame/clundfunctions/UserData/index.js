@@ -23,7 +23,7 @@ exports.main = async (event, context) => {
 
 const reportData = async (openId, data) => {
   await wx.setUserCloudStorage({
-    KVDataList: data.KVDataList,
+    KVDataList: data,
   }).then(
     () => {
       return {
